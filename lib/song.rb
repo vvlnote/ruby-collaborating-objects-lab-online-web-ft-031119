@@ -12,7 +12,7 @@ class Song
     # arr[1] = song name
     # arr[2] = genre
     
-    song = Song.new(arr[1])
+    song = self.new(arr[1])
     artist = Artist.find_or_create_by_name(arr[0])
     artist.add_song(song)
     song.artist = artist
